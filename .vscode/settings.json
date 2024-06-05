@@ -1,72 +1,71 @@
 {
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit",
-        "source.organizeImports": "never"
-    },
-    "editor.tabSize": 4,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "editor.tabSize": 4,
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.alwaysShowStatus": true,
+  "cssModules.camelCase": true,
+  "[javascriptreact][typescriptreact][typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.formatOnSave": true,
-    "editor.wordWrap": "on",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "eslint.alwaysShowStatus": true,
-    "cssModules.camelCase": true,
-    "[javascriptreact][typescriptreact][typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features",
-        "editor.formatOnSave": true,
-        "editor.formatOnPaste": true,
-        "editor.trimAutoWhitespace": true
-    },
-    "workbench.colorCustomizations": {
-        "editorLineNumber.foreground": "#7b7c7b",
-        "editor.selectionBackground": "#7b7c7b",
-        "editorIndentGuide.activeBackground": "#79ba8a",
-        "editorIndentGuide.background": "#5c5c5d",
+    "editor.formatOnPaste": true,
+    "editor.trimAutoWhitespace": true
+  },
+  "workbench.colorCustomizations": {
+    "editorLineNumber.foreground": "#7b7c7b",
+    "editor.selectionBackground": "#7b7c7b",
+    "editorIndentGuide.activeBackground": "#79ba8a",
+    "editorIndentGuide.background": "#5c5c5d"
+  },
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line",
+  "editor.copyWithSyntaxHighlighting": true,
+  "editor.fontWeight": "normal",
+  "editor.fontSize": 14,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.guides.indentation": true,
+  "editor.guides.highlightActiveIndentation": true,
 
-    },
-    "editor.cursorBlinking": "expand",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.cursorStyle": "line",
-    "editor.copyWithSyntaxHighlighting": true,
-    "editor.fontWeight": "normal",
-    "editor.fontSize": 14,
-    "editor.guides.bracketPairs": true,
-    "editor.guides.highlightActiveBracketPair": true,
-    "editor.guides.indentation": true,
-    "editor.guides.highlightActiveIndentation": true,
+  "editor.indentSize": "tabSize",
+  "editor.suggest.preview": true,
+  "editor.suggest.selectionMode": "always",
+  "editor.suggest.showEvents": true,
+  "editor.suggest.showFields": true,
+  "editor.suggest.showFiles": true,
+  "editor.suggest.showFolders": true,
+  "editor.suggest.showFunctions": true,
+  "editor.suggest.showIcons": true,
+  "editor.suggest.showInterfaces": true,
 
-    "editor.indentSize": "tabSize",
-    "editor.suggest.preview": true,
-    "editor.suggest.selectionMode": "always",
-    "editor.suggest.showEvents": true,
-    "editor.suggest.showFields": true,
-    "editor.suggest.showFiles": true,
-    "editor.suggest.showFolders": true,
-    "editor.suggest.showFunctions": true,
-    "editor.suggest.showIcons": true,
-    "editor.suggest.showInterfaces": true,
+  // When enabled IntelliSense shows `issues`-suggestions.
+  "editor.suggest.showIssues": true,
 
-    // When enabled IntelliSense shows `issues`-suggestions.
-    "editor.suggest.showIssues": true,
+  // When enabled IntelliSense shows `keyword`-suggestions.
+  "editor.suggest.showKeywords": true,
 
-    // When enabled IntelliSense shows `keyword`-suggestions.
-    "editor.suggest.showKeywords": true,
+  // When enabled IntelliSense shows `method`-suggestions.
+  "editor.suggest.showMethods": true,
 
-    // When enabled IntelliSense shows `method`-suggestions.
-    "editor.suggest.showMethods": true,
+  // When enabled IntelliSense shows `module`-suggestions.
+  "editor.suggest.showModules": true,
 
-    // When enabled IntelliSense shows `module`-suggestions.
-    "editor.suggest.showModules": true,
+  // When enabled IntelliSense shows `operator`-suggestions.
+  "editor.suggest.showOperators": true,
 
-    // When enabled IntelliSense shows `operator`-suggestions.
-    "editor.suggest.showOperators": true,
+  // When enabled IntelliSense shows `property`-suggestions.
+  "editor.suggest.showProperties": true,
 
-    // When enabled IntelliSense shows `property`-suggestions.
-    "editor.suggest.showProperties": true,
+  // When enabled IntelliSense shows `reference`-suggestions.
+  "editor.suggest.showReferences": true,
 
-    // When enabled IntelliSense shows `reference`-suggestions.
-    "editor.suggest.showReferences": true,
-
-    // When enabled IntelliSense shows `snippet`-suggestions.
-    "editor.suggest.showSnippets": true,
-    "files.autoSave": "afterDelay"
-    // "editor.fontFamily": "Fira Code, Courier New, 'monospace'"
+  // When enabled IntelliSense shows `snippet`-suggestions.
+  "editor.suggest.showSnippets": true
+  // "files.autoSave": "afterDelay"
+  // "editor.fontFamily": "Fira Code, Courier New, 'monospace'"
 }

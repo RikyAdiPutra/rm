@@ -1,22 +1,23 @@
-"use client"
-import { Button } from "@/components/ui/button"
+"use client";
 import FilterData from "@/components/FilterData";
-import SortData from "@/components/SortData";
 import Basecontent from "@/components/basecontent";
 import ProductList from "@/components/ProductList";
+import SortData from "@/components/SortData";
+import { useState } from "react";
 
 export default function Home() {
-    return (
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  return (
     <div className="wrapper">
-        <Basecontent>
-            <div className="my-7">
-                <div className="flex lg:flex-row flex-col lg:items-center gap-5 justify-between w-full">
-                    <FilterData/>
-                    <SortData/>
-                </div>
-                <ProductList/>
-            </div>
-        </Basecontent>
+      <Basecontent>
+        <div className="my-7">
+          <div className="flex justify-between items-center">
+            <FilterData onSelectCategory={setSelectedCategory} />
+            <SortData />
+          </div>
+          <ProductList shouldDisplay={!selectedCategory} />
+        </div>
+      </Basecontent>
     </div>
-    );
+  );
 }
