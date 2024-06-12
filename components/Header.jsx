@@ -7,6 +7,7 @@ import { CiMenuKebab } from "react-icons/ci";
 import Basecontent from "@/components/basecontent"
 import { useQuery } from "@tanstack/react-query"
 import { getQuery } from "./ProductList";
+import SearchItems from "./SearchItems"
 
 function HeaderSection() {
   const { cart, productName, price } = useStore();
@@ -67,6 +68,7 @@ function HeaderSection() {
               resultSearch?.map((item) => {
                 return (
                   <li key={item.id}><Link href={`/product/${item.id}`}>{item.title}</Link></li>
+                  // <SearchItems key={item.id} href={`/product/${item.id}`} title={item.title} />
                 )
               })
             }
