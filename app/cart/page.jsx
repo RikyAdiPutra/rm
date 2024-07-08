@@ -30,7 +30,7 @@ export default function CartPage() {
     const response = await axios
       .post("/api/payment", myData)
       .then((res) => {
-        return console.log(res.data.token);
+        return res.data.token;
       })
       .catch((err) => {
         console.log(err);
