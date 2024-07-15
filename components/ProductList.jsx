@@ -6,6 +6,8 @@ import { getData } from "@/lib/services";
 import _ from 'lodash';
 import { useSearchParams } from "next/navigation"
 
+
+// 1
 export const getQuery = async () => {
     return await getData("/products")
 }
@@ -14,9 +16,8 @@ export default function ProductList() {
     const searchParams = useSearchParams()
     const categoryParams = searchParams.get("category")
     const sortParams = searchParams.get("sort")
-    const rateParams = searchParams.get("rate_item")
 
-
+    // 2
     const query = useQuery({
         queryKey: ["product"],
         queryFn: getQuery
@@ -42,7 +43,9 @@ export default function ProductList() {
         )
     }
 
+    // 3
     const myData = query.data.data
+    // console.log(myData)
 
     const newData = categoryParams && !sortParams ?
         _.filter(myData, (i) => {

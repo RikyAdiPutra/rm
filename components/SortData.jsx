@@ -21,17 +21,19 @@ export default function SortData() {
     }
     return (
         <div>
-            <div className="flex items-center gap-4">
-                Sort
-                <Select onValueChange={(e) => handleValue(e)}>
-                    <SelectTrigger className="w-[180px]">
-                        <SelectValue placeholder="Sort By" />
-                    </SelectTrigger>
-                    <SelectContent>
-                        <SelectItem value="Low_Price">Low Price</SelectItem>
-                        <SelectItem value="High_Price">High Price</SelectItem>
-                    </SelectContent>
-                </Select>
+            <div className="flex justify-between lg:flex-row flex-col lg:items-center">
+                <div className="flex justify-between lg:flex-row flex-col lg:items-center">
+                    Sort
+                    <Select onValueChange={(e) => handleValue(e)}>
+                        <SelectTrigger className="w-[180px]">
+                            <SelectValue placeholder="Sort By" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            <SelectItem value="Low_Price">Low Price</SelectItem>
+                            <SelectItem value="High_Price">High Price</SelectItem>
+                        </SelectContent>
+                    </Select>
+                </div>
             </div>
         </div>
     )

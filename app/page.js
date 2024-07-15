@@ -11,7 +11,7 @@ export default function Home() {
     <div className="wrapper">
       <Basecontent>
         <div className="my-7">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center px-2 lg:px-0">
             <FilterData onSelectCategory={setSelectedCategory} />
             <SortData />
           </div>

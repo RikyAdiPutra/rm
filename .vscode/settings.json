@@ -65,7 +65,10 @@
   "editor.suggest.showReferences": true,
 
   // When enabled IntelliSense shows `snippet`-suggestions.
-  "editor.suggest.showSnippets": true
+  "editor.suggest.showSnippets": true,
   // "files.autoSave": "afterDelay"
   // "editor.fontFamily": "Fira Code, Courier New, 'monospace'"
+
+  // codeSnap Custom
+  "codesnap.backgroundColor": "violet"
 }
